@@ -15,7 +15,7 @@ pipeline {
             steps{
                 script{
                   
-                        docker.withRegistry('https://498431404772.dkr.ecr.us-west-2.amazonaws.com', 'ecr:us-west-2:aws-ecr') 
+                        docker.withRegistry('https://498431404772.dkr.ecr.us-west-2.amazonaws.com', 'saroj') 
                         {
                             docker.image('sksrepos').push('latest')
                         }
